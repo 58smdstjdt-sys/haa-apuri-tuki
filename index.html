@@ -15,16 +15,18 @@
     color: #3a3431;
     background: #fbf7f4;
   }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f3eae6; background: #1b1716; }
-    a { color: #ebb9c0; }
-  }
   h1 { font-size: 1.6rem; margin-bottom: 0.2em; }
   h2 { font-size: 1.15rem; margin-top: 2em; }
   p, li { margin: 0.5em 0; }
   a { color: #915a62; }
   .lang { font-size: 0.95rem; }
   hr { margin-top: 3em; border: none; border-top: 1px solid #efe6e0; }
+  /* Viimeisenä, jotta tumman tilan värit voittavat yleiset säännöt */
+  @media (prefers-color-scheme: dark) {
+    body { color: #f3eae6; background: #1b1716; }
+    a { color: #ebb9c0; }
+    hr { border-top-color: #3a3230; }
+  }
 </style>
 </head>
 <body>
